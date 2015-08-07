@@ -10,6 +10,6 @@ app.get('/prices', function(req, res) {
     });
 });
 
-app.listen(8080);
+app.listen(process.env.PORT || 8080);
 
 module.exports = app;
